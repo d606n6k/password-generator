@@ -8,24 +8,30 @@ var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"
 var specialChar = ["!","@","^","*","$","/","~","."];
 
 // variable console.logs
-console.log(lowerCase);
-console.log(upperCase);
-console.log(specialChar);
+// console.log(lowerCase);
+// console.log(upperCase);
+// console.log(specialChar);
 
 function generatePassword(){
     // ask user for password length
     var passwordLength = window.prompt("How many characters long would you like your password to be?");
     // IF the user enters something other than a number value ->
-    if (passwordLength <= 8 || passwordLength >= 128){
+        // DO alert the user that "Please enter a number!"
+        // 'STOP THE FUNCTION' aka 'return'
+    if (passwordLength < 8 || passwordLength > 128){
         alert("Please enter a number greater than 8 and less than 128");
         return;
     }
-    // if (passwordLength === number){
-    //     alert("You have chosen a number!");
-    //     return "That isnt a number!";
-    // }
-        // DO alert the user that "Please enter a number!"
-        // 'STOP THE FUNCTION' aka 'return'
+
+    var charTypes = window.confirm("Would you like to use Special Characters in your password?");
+    
+    var upperChars = window.confirm("Would you like to use Uppercase characters in your password?");
+    console.log(upperChars);
+    
+    var lowerChars = window.confirm("Would you like to use Lowercase characters in your password?");
+    console.log(lowerChars);
+
+
     // IF the entered number is less than 8
         // alert the user that we need a number greater than or equal to 8 "enter 8 or more"
         // 'STOP THE FUNCTION!' aka 'return'
