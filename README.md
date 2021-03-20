@@ -1,8 +1,7 @@
 # Javascript Password Generator
 
-    ```md
-    ![Password Generator Image](assets/images/header.png)
-    ```
+
+    ![Password Generator Image](header.png)
 
 ## Description
 This is a password generator utilizing Javascript! The application will prompt the user to choose between 8-128 characters for a password. The application will then ask if the user would like to use UPPERCASE characters in their randomly password. The application will also ask if the user would like to use LOWERCASE characters in their randomly generated password. Finally, the application will ask if the User would like to utilize SPECIAL characters in their randomly generated password.
