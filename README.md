@@ -1,7 +1,7 @@
 # Javascript Password Generator
 
     ```md
-    ![alt text](assets/images/header.png)
+    ![Password Generator Image](assets/images/header.png)
     ```
 
 ## Description
