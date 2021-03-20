@@ -27,7 +27,7 @@ function generatePassword(){
 
     if (passwordLength < 8 || passwordLength > 128){
         alert("Please enter a number greater than 8 and less than 128");
-        return;
+        return "Please enter a valid number between 8 and 128";
     }
 
     var specialChars = window.confirm("Would you like to use Special Characters in your password?");
